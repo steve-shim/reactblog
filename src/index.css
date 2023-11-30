@@ -15,11 +15,17 @@ code {
 header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   border-bottom: 1px solid #f2f2f2;
   padding: 10px 40px;
   min-height: 40px;
   align-items: center;
+}
+
+header .header__logo {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 header a {
@@ -45,8 +51,170 @@ footer {
   gap: 20px;
 }
 
-.post-list {
+footer a {
+  text-decoration: none;
+  color: gray;
+}
+
+footer a:focus,
+footer a:hover {
+  color: black;
+}
+
+.post__navigation {
+  display: flex;
+  gap: 12px;
+  margin: 0 auto;
+  max-width: 680px;
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+  padding: 40px 20px 0px 20px;
+}
+
+.post__navigation--active {
+  color: black;
+  font-weight: 600;
+}
+
+.post__list,
+.post__detail {
   min-height: 90vh;
-  padding: 20px 40px;
+  padding: 20px;
   text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 24px;
+}
+
+.post__list a {
+  text-decoration: none;
+  color: black;
+}
+
+.post__box {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 2px solid #f2f2f204;
+}
+
+.post__profile-box {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.post__profile {
+  width: 36px;
+  height: 36px;
+  background-color: #f2f2f2be;
+  border-radius: 50%;
+}
+
+.post__profile {
+  width: 36px;
+  height: 36px;
+  background-color: #f2f2f2be;
+  border-radius: 50%;
+}
+
+.post__date,
+.post__author-name {
+  color: gray;
+}
+
+.post__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 14px 0px;
+}
+
+.post__text {
+  font-size: 16px;
+  color: gray;
+}
+
+.post__utils-box {
+  display: flex;
+  gap: 8px;
+  flex-direction: row-reverse;
+  font-size: 14px;
+  color: gray;
+}
+
+.post__delete a:focus,
+.post__delete a:hover {
+  color: black;
+}
+
+.post__edit a:focus,
+.post__edit a:hover {
+  color: black;
+}
+
+.post__detail .post__title {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.post__detail .post__utils-box {
+  padding: 10px 0px;
+  border-top: 1px solid #f2f2f2be;
+  border-bottom: 1px solid #f2f2f2be;
+  flex-direction: row;
+}
+
+.post__detail .post__profile-box {
+  padding: 10px 0px;
+}
+
+.post__detail .post__text {
+  padding: 20px 0px;
+}
+
+.profile__box {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 680px;
+  text-align: left;
+  line-height: 24px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.flex__box-lg {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.profile__image {
+  width: 72px;
+  height: 72px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.profile__name {
+  font-size: 16px;
+  padding-top: 4px;
+}
+
+.profile__email {
+  font-weight: 500;
+}
+
+.profile__logout {
+  color: gray;
+  font-size: 14px;
+}
+
+.profile__logout:hover,
+.profile__logout:focus {
+  color: black;
 }
