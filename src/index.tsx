@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Test from "./Test";
 import { BrowserRouter as Router } from "react-router-dom";
 import firebase from "./firebaseApp";
 import { AuthContextProvider } from "./context/AuthContext";
@@ -15,6 +16,7 @@ root.render(
   <AuthContextProvider>
     <Router>
       <App />
+      {/* <Test /> */}
     </Router>
   </AuthContextProvider>
 );
