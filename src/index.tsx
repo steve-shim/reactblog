@@ -6,6 +6,7 @@ import Test from "./Test";
 import { BrowserRouter as Router } from "react-router-dom";
 import firebase from "./firebaseApp";
 import { AuthContextProvider } from "./context/AuthContext";
+import { ThemeContextProvider } from "./context/ThemeContext";
 
 console.log("firebase", firebase);
 
@@ -13,12 +14,14 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <AuthContextProvider>
-    <Router>
-      <App />
-      {/* <Test /> */}
-    </Router>
-  </AuthContextProvider>
+  <ThemeContextProvider>
+    <AuthContextProvider>
+      <Router>
+        <App />
+        {/* <Test /> */}
+      </Router>
+    </AuthContextProvider>
+  </ThemeContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
