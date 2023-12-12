@@ -149,6 +149,8 @@ footer a:hover {
   color: gray;
 }
 
+.post__delete:hover,
+.post__delete:focus,
 .post__delete a:focus,
 .post__delete a:hover {
   color: black;
@@ -191,6 +193,15 @@ footer a:hover {
 
 .post__text--pre-wrap {
   white-space: pre-wrap;
+}
+
+.post__category {
+  color: gray;
+  border: 1px solid lightgray;
+  background: #f2f2f2;
+  padding: 0px 4px;
+  border-radius: 10px;
+  font-size: 12px;
 }
 
 .profile__box {
@@ -449,6 +460,14 @@ input:checked + .carousel__slide-container .nav label {
 
 .form__error {
   color: red;
+}
+
+.form select {
+  border: 1px solid #f2f2f2;
+  max-width: 680px;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 0.3rem;
 }
 
 .loader {

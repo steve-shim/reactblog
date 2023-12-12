@@ -10,7 +10,6 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const auth = getAuth(app);
   console.log("auth", auth);
-  console.log("db", db);
   // auth를 체크하기 전에 (initialize 전)에는 loader를 띄워주는 용도
   const [init, setInit] = useState<boolean>(false);
 
